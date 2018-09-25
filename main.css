@@ -37,5 +37,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 .main_category{
-   margin-top: 20em;
+   text-align: center;
+}
+
+button{
+   border: none;
+   background: none;
+   cursor: pointer;
+   margin-top: 3em;
+   text-align: center;
+   font-size: 1.5em;  
 }
