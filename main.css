@@ -36,15 +36,30 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
    width: 1.8em;
 }
 
+
 .main_category{
    text-align: center;
+   margin-top: 3em;
 }
 
-button{
-   border: none;
-   background: none;
-   cursor: pointer;
-   margin-top: 3em;
-   text-align: center;
-   font-size: 1.5em;  
+.main_category label {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.menu-content {
+    max-height: 0;
+    /*overflow: hidden;*/
+    transform: scaleY(0);
+}
+
+input:checked ~ .menu-content {
+    transform-origin: top;
+  transition: transform 0.5s ease-out;
+  transform: scaleY(1); 
+    max-height: 100%;
 }
