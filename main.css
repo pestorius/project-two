@@ -53,8 +53,24 @@ html{
     cursor: pointer;
 }
 
-.dot{
+.sub_category label{
+   font-size: 1.5em;
+}
+
+.article_content{
+   font-size: 1em;
+   line-height: 1.2em;
+   margin: 0 5em;
+}
+
+.main_dot{
    width: 0.4em;
+   display: block;
+   margin: 1em auto;
+}
+
+.sub_dot{
+   width: 0.3em;
    display: block;
    margin: 1em auto;
 }
@@ -63,16 +79,17 @@ input {
     display: none;
 }
 
-.menu-content {
-   font-family: Verdana;
-   line-height: 1.2em;
-   margin: 0 5em;
+.article_content, .sub_category {
    max-height: 0;
    /*overflow: hidden;*/
    transform: scaleY(0);
 }
 
-input:checked ~ .menu-content {
+.sub_category{
+   
+}
+
+input:checked ~ .article_content, input:checked ~ .sub_category {
    transform-origin: top;
    transition: transform 0.4s ease-out;
    transform: scaleY(1); 
