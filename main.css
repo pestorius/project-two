@@ -64,9 +64,12 @@ input {
 }
 
 .menu-content {
-    max-height: 0;
-    /*overflow: hidden;*/
-    transform: scaleY(0);
+   font-family: Verdana;
+   line-height: 1.2em;
+   margin: 0 5em;
+   max-height: 0;
+   /*overflow: hidden;*/
+   transform: scaleY(0);
 }
 
 input:checked ~ .menu-content {
