@@ -8,13 +8,66 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/*
+   element selectors
+*/
+
 html{
    scroll-behavior: smooth;
+}
+
+h2{
+   text-align: left;
+   font-size: 1.3em;
+   line-height: 1.2em;
+   margin-bottom: 0.5em;
+   margin-top: 0.5em;
+}
+
+h3{
+   text-align: left;
+   font-size: 1.15em;
+   line-height: 1.2em;
+}
+
+.sub_category p, ul{
+   text-align: left;
+   font-size: 1em;
+   line-height: 1.2em;
+}
+
+ul{
+   list-style-type: circle;
+   padding-left: 1.5em;
+}
+
+/*
+   id selectors
+*/
+
+#contact_me{
+   position: fixed;
+   top: 0.5em;
+   right: 0.5em;
+   width: 2.5em;
+}
+
+#education ul{
+   margin-bottom: 0.5em;   
 }
 
 #header{
    width: 100%;
    text-align: center;
+}
+
+#header_name{
+   display: inline-block;
+   margin: 0 auto;
+   margin-top: 1.5em;
+   font-size: 4em;
+   font-family: Trebuchet MS;
+   margin-bottom: 1.3em;
 }
 
 #logo{
@@ -27,22 +80,21 @@ html{
    top: 0.3em;
 }
 
-#header_name{
-   display: inline-block;
-   margin: 0 auto;
-   margin-top: 1.5em;
-   font-size: 4em;
-   font-family: Trebuchet MS;
-   margin-bottom: 1.3em;
+/*
+   class selectors
+*/
+
+.article_content{
+   font-size: 1em;
+   line-height: 1.2em;
+   margin: 0 5em;
 }
 
-#contact_me{
-   position: fixed;
-   top: 0.5em;
-   right: 0.5em;
-   width: 2.5em;
+.article_content, .sub_category {
+   max-height: 0;
+   /*overflow: hidden;*/
+   transform: scaleY(0);
 }
-
 
 .main_category{
    text-align: center;
@@ -53,40 +105,30 @@ html{
     cursor: pointer;
 }
 
-.sub_category label{
-   font-size: 1.5em;
-}
-
-.article_content{
-   font-size: 1em;
-   line-height: 1.2em;
-   margin: 0 5em;
-}
-
 .main_dot{
    width: 0.4em;
    display: block;
    margin: 1em auto;
+   opacity: 0.7;
+}
+
+.sub_category label{
+   font-size: 1.5em;
 }
 
 .sub_dot{
    width: 0.3em;
    display: block;
    margin: 1em auto;
+   opacity: 0.7;
 }
+
+/*
+   others
+*/
 
 input {
     display: none;
-}
-
-.article_content, .sub_category {
-   max-height: 0;
-   /*overflow: hidden;*/
-   transform: scaleY(0);
-}
-
-.sub_category{
-   
 }
 
 input:checked ~ .article_content, input:checked ~ .sub_category {
@@ -95,3 +137,11 @@ input:checked ~ .article_content, input:checked ~ .sub_category {
    transform: scaleY(1); 
    max-height: 100%;
 }
+
+input ~ .article_content, input ~ .sub_category{
+   transform-origin: top;
+   transition: transform 0.4s ease-out;
+   transform: scaleY(0); 
+   max-height: 0;
+}
+
