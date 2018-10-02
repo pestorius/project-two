@@ -50,6 +50,7 @@ ul{
    top: 0.5em;
    right: 0.5em;
    width: 2.5em;
+   z-index: 1;
 }
 
 #education ul{
@@ -78,6 +79,21 @@ ul{
    font-size: 2em;
    left: 0.3em;
    top: 0.3em;
+   z-index: 1;
+}
+
+#panic_button{
+   float: left;
+   margin: 1em 0;
+}
+
+#timer{
+   margin: 1em auto;
+}
+
+#map{
+   float: right;
+   margin: 1em 0;
 }
 
 /*
