@@ -96,6 +96,20 @@ ul{
    margin: 1em 0;
 }
 
+#recent_events{
+   float: left;
+   margin: 1em 0;
+}
+
+#route{
+   margin: 1em auto;
+}
+
+#documented_events{
+   float: right;
+   margin: 1em 0;
+}
+
 /*
    class selectors
 */
