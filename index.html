@@ -11,21 +11,21 @@
 		<a href="index.html#header" title="To the top" id="logo">F.A.</a>
 		<h1 id="header_name">Farhan Aslam</h1>
 		<a href="mailto:farhaangauhar@yahoo.com" title="Email">
-			<img src="./contact.png" alt="Image of letter to contact me" id="contact_me"></a>
+		<img src="./contact.png" alt="Image of letter to contact me" id="contact_me"></a>
 	</header>
 	<main>
 	  <div class="main_category">
 	    <input type="checkbox" id="about_me">
         <label for="about_me">About Me</label>
 		<img class="main_dot" src="./dot.png" alt="Image of a dot">
-        <article class="article_content">
+        <div class="article_content">
 		  <p>Travelling from the other side of the globe, I have come a far way from Malaysia to 
 		  achieve my goals and explore new opportunities. I began my journey in Oakton Community 
 		  College, where I dived into the basics of Computer Science. 2 years later I've transferred 
 		  to Illinois Institute of Technology to pursue my Bachelor's Degree in Computer Science. I 
 		  am currently a senior at Illinois Institute of Technology, and I've gained a vast knowledge 
 		  of techniques and practices in Computer Science and related fields.</p>
-		</article>
+		</div>
 		<img class="main_dot" src="./dot.png" alt="Image of a dot">
 	  </div>
 	  <div class="main_category">
@@ -36,7 +36,7 @@
 		  <input type="checkbox" id="resume">
           <label for="resume">Resume</label>
 		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
-		  <article class="article_content">
+		  <div class="article_content">
 		    <section id="professional_summary">
 		      <h2>Professional Summary</h2>
 			  <p>Dedicated Computer Science student focused on applying advanced technical expertise
@@ -96,14 +96,14 @@
 				<li>Member of Phi Theta Kappa Honor Society</li>
 			  </ul>
 			</section>
-		  </article>
+		  </div>
 		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
 		</div>
 		<div class="sub_category">
 		  <input type="checkbox" id="projects">
           <label for="projects">Projects</label>
 		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
-		  <article class="article_content">
+		  <div class="article_content">
 		    <h2>IITSecurity</h2>
 			<p>IITSecurity is an Android mobile application I helped build with my two team mates
 			Jose Casarrubios and Yael Torres in a mobile application development course. It aims 
@@ -112,9 +112,11 @@
 			danger zones. This app can be used by the Public Safety as well, allowing them to view 
 			and respond to recent incidents, with the app providing them with the quickest route to
 			a student in trouble.</p>
-			<img id="panic_button" src="Picture1.png" alt="Screenshot of panic button">
-			<img id="timer" src="Picture2.png" alt="Screenshot of Timer">
-			<img id="map" src="Picture3.png" alt="Screenshot of Map">
+			<div class="row_of_pics">
+			  <img id="panic_button" src="Picture1.png" alt="Screenshot of panic button">
+			  <img id="timer" src="Picture2.png" alt="Screenshot of Timer">
+			  <img id="map" src="Picture3.png" alt="Screenshot of Map">
+			</div>
 			<p>The first three images are screenshots of the user interface for the student side
 			of the application.</p>
 			<p>The first image shows a large panic button, which appears as soon as a student
@@ -129,9 +131,11 @@
 			used to help a student plan a journey ahead of time, allowing them to avoid areas with
 			higher crime potential. The pins on the map are color-coded, indicating the type of incident
 			that occurred (robbery, assault, sexual assault, etc.).</p>
-			<img id="recent_events" src="Picture5.png" alt="Screenshot of recent events">
-			<img id="route" src="Picture6.png" alt="Screenshot of route">
-			<img id="documented_events" src="Picture7.png" alt="Screenshot of documented events">
+			<div class="row_of_pics">
+			  <img id="recent_events" src="Picture5.png" alt="Screenshot of recent events">
+			  <img id="route" src="Picture6.png" alt="Screenshot of route">
+			  <img id="documented_events" src="Picture7.png" alt="Screenshot of documented events">
+			</div>
 			<p>These next three images are screenshots of the user interface for the public safety
 			side of the application.</p>
 			<p>The first image shows the user the recent events that have occurred. These are events
@@ -148,7 +152,7 @@
 			<p>This is a working application and not just a designed interface. The only functionality 
 			it currently lacks from being a usable app is the ability to call the authorities when the 
 			panic button is pressed</p>
-		  </article>
+		  </div>
 		</div>
 		<img class="main_dot" src="./dot.png" alt="Image of a dot">
 	  </div>
@@ -156,11 +160,36 @@
 	    <input type="checkbox" id="what_i">
         <label for="what_i">What I...</label>
 		<img class="main_dot" src="./dot.png" alt="Image of a dot">
-        <div class="article_content">
-		  <ul>
-		    <li><p>Statement about me bla bla bla<br>isjnicnevenov Ijncfieoncv evinevic i<br>ekrnceoricner eoirneio</p></li>
-		  </ul>
+        <div class="sub_category">
+		  <input type="checkbox" id="what_been">
+          <label for="what_been">What I've Done</label>
+		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
+		  <div class="article_content">
+		    <h2>Summer of 2018</h2>
+			<p>I've been spending most of my summer breaks in Malaysia since I began studying in the states.
+			It's a great chance for me to unwind and be as lazy as I want, but I try to be productive as well.
+			I use this free time to learn some new skills or use the skills I already have to build something.</p>
+			<h3>Ukulele</h3>
+		  </div>
+		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
 		</div>
+		<div class="sub_category">
+		  <input type="checkbox" id="what_doing">
+          <label for="what_doing">What I'm Doing</label>
+		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
+		  <div class="article_content">
+		    <p>oen</p>
+		  </div>
+		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
+		 </div>
+		 <div class="sub_category">
+		  <input type="checkbox" id="what_will_do">
+          <label for="what_will_do">What I Want To Do</label>
+		  <img class="sub_dot" src="./dot.png" alt="Image of a dot">
+		  <div class="article_content">
+		    <p>wdfleknrkef</p>
+		  </div>
+		 </div>
 		<img class="main_dot" src="./dot.png" alt="Image of a dot">
 	  </div>
 	  <div class="main_category">

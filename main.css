@@ -30,10 +30,8 @@ h3{
    line-height: 1.2em;
 }
 
-.sub_category p, ul{
-   text-align: left;
-   font-size: 1em;
-   line-height: 1.2em;
+p{
+   margin-bottom: 1em;
 }
 
 ul{
@@ -53,12 +51,16 @@ ul{
    z-index: 1;
 }
 
+#documented_events{
+   float: right;
+   margin: 1em 0;
+}
+
 #education ul{
    margin-bottom: 0.5em;   
 }
 
 #header{
-   width: 100%;
    text-align: center;
 }
 
@@ -105,11 +107,6 @@ ul{
    margin: 1em auto;
 }
 
-#documented_events{
-   float: right;
-   margin: 1em 0;
-}
-
 /*
    class selectors
 */
@@ -120,13 +117,13 @@ ul{
    margin: 0 15%;
 }
 
-.article_content, .sub_category {
+input ~ .article_content, input ~ .sub_category {
    max-height: 0;
-   /*overflow: hidden;*/
-   transform: scaleY(0);
+   overflow: hidden;
+   transform: scaleY(0); 
 }
 
-.main_category{
+.main_category, .sub_category{
    text-align: center;
 }
 
@@ -144,6 +141,13 @@ ul{
 
 .sub_category label{
    font-size: 1.5em;
+   cursor: pointer;
+}
+
+.sub_category p, ul{
+   text-align: left;
+   font-size: 1em;
+   line-height: 1.2em;
 }
 
 .sub_dot{
@@ -161,17 +165,24 @@ input {
     display: none;
 }
 
-input:checked ~ .article_content, input:checked ~ .sub_category {
+input:checked ~ .article_content, input:checked ~ .sub_category{
    transform-origin: top;
    transition: transform 0.4s ease-out;
    transform: scaleY(1); 
    max-height: 100%;
 }
 
+/*
+   have to comment this out because
+   it messes with the layout for some
+   reason
+
 input ~ .article_content, input ~ .sub_category{
+   overflow: hidden;
    transform-origin: top;
    transition: transform 0.4s ease-out;
    transform: scaleY(0); 
    max-height: 0;
 }
+*/
 
