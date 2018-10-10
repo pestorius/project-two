@@ -25,16 +25,22 @@ h2{
 h3{
    font-size: 1.15em;
    line-height: 1.2em;
-   margin: 0.3em 0;
+   margin-top: 0.4em;
 }
 
 p{
+   line-height: 1.2em;
    margin-bottom: 1em;
+}
+
+u{
+   text-decoration: underline;
 }
 
 ul{
    list-style-type: circle;
    padding-left: 1.5em;
+   line-height: 1.2em;
 }
 
 /*
@@ -54,8 +60,12 @@ ul{
    left: 0.3em;
 }
 
-#education ul{
-   margin-bottom: 0.5em;   
+#education ul, #experience ul{
+   margin-bottom: 0.7em;   
+}
+
+#education h3, #experience h3{
+   margin: 0;
 }
 
 #header{
@@ -78,7 +88,6 @@ ul{
 .article_content{
    text-align: left;
    font-size: 1em;
-   line-height: 1.2em;
    margin: 0 15%;
 }
 
@@ -122,7 +131,6 @@ input ~ .article_content, input ~ .sub_category {
 .sub_category p, ul{
    text-align: left;
    font-size: 1em;
-   line-height: 1.2em;
 }
 
 .sub_dot{
@@ -146,6 +154,18 @@ input:checked ~ .article_content, input:checked ~ .sub_category{
    transform: scaleY(1); 
    max-height: 100%;
 }
+
+/*
+   opens projects but only if portfolio
+   is checked
+
+.sub_category>.article_content:target{
+   transform-origin: top;
+   transition: transform 0.4s ease-out;
+   transform: scaleY(1); 
+   max-height: 100%;
+}
+*/
 
 /*
    have to comment this out because
