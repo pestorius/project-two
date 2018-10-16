@@ -12,8 +12,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
    element selectors
 */
 
+figcaption{
+   text-align: center;
+}
+
 html{
    scroll-behavior: smooth;
+   font-family: Trebuchet MS;
 }
 
 h2{
@@ -77,8 +82,32 @@ ul{
    margin: 0 auto;
    margin-top: 1.5em;
    font-size: 4em;
-   font-family: Trebuchet MS;
+   /*font-family: Trebuchet MS;*/
    margin-bottom: 1.3em;
+}
+
+#photography_fig img{
+   width: 100%;
+}
+
+@media screen and (min-width: 600px){
+   #photography_container{
+   display: grid;
+   grid-template-columns: 49% 49%;
+   grid-column-gap: 2%;
+   }
+   #photography_heading{
+      text-align: center;
+   }
+
+   #photography_paragraph{
+      font-size: 1.25em;
+      margin: auto;
+   }
+
+   #photography_fig img{
+      width: 100%;
+   }
 }
 
 /*
