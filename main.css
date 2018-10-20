@@ -12,10 +12,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
    element selectors
 */
 
-figcaption{
-   text-align: center;
-}
-
 html{
    scroll-behavior: smooth;
    font-family: Trebuchet MS;
@@ -25,6 +21,7 @@ h1{
    font-size: 2em;
    text-align: center;
 }
+
 h2{
    font-size: 1.3em;
    line-height: 1.2em;
@@ -38,12 +35,15 @@ h3{
 }
 
 p{
-   line-height: 1.2em;
+   line-height: 1.3em;
    margin-bottom: 1em;
+   font-size: 0.9em;
 }
 
-u{
-   text-decoration: underline;
+@media screen and (min-width: 600px){
+   p{
+      font-size: 1em;
+   }
 }
 
 ul{
@@ -52,9 +52,33 @@ ul{
    line-height: 1.2em;
 }
 
+article{
+   text-align: left;
+   margin: 0 15%;
+}
+
+u{
+   text-decoration: underline;
+}
+
+figcaption{
+   text-align: center;
+}
+
 /*
    id selectors
 */
+
+#header{
+   text-align: center;
+}
+
+#header_name{
+   margin: 0 auto;
+   margin-top: 1.5em;
+   font-size: 4em;
+   margin-bottom: 1.3em;
+}
 
 #contact_me, #logo{
    position: fixed;
@@ -67,27 +91,6 @@ ul{
 
 #logo{
    left: 0.3em;
-}
-
-#education ul, #experience ul{
-   margin-bottom: 0.7em;   
-}
-
-#education h3, #experience h3{
-   margin: 0;
-}
-
-#header{
-   text-align: center;
-}
-
-#header_name{
-   display: inline-block;
-   margin: 0 auto;
-   margin-top: 1.5em;
-   font-size: 4em;
-   /*font-family: Trebuchet MS;*/
-   margin-bottom: 1.3em;
 }
 
 #photography_fig img{
@@ -118,32 +121,19 @@ ul{
    class selectors
 */
 
-.article_content{
-   text-align: left;
-   font-size: 1em;
-   margin: 0 15%;
-}
-
-input ~ .article_content, input ~ .sub_category {
-   max-height: 0;
-   overflow: hidden;
-   transform: scaleY(0); 
-}
-
-.main_category, .sub_category{
-   text-align: center;
-}
-
-.main_category label {
-    font-size: 2em;
-    cursor: pointer;
-}
-
 .main_dot{
    width: 0.4em;
    display: block;
    margin: 1em auto;
    opacity: 0.7;
+}
+
+.resume_ul{
+   margin-bottom: 0.7em;
+}
+
+.resume_h3{
+   margin: 0;
 }
 
 .row_of_pics{
@@ -156,65 +146,4 @@ input ~ .article_content, input ~ .sub_category {
    margin: 1em 0;
 }
 
-.sub_category label{
-   font-size: 1.5em;
-   cursor: pointer;
-}
-
-.sub_category p, ul{
-   text-align: left;
-   font-size: 1em;
-}
-
-.sub_dot{
-   width: 0.3em;
-   display: block;
-   margin: 1em auto;
-   opacity: 0.7;
-}
-
-/*
-   others
-*/
-
-input {
-    display: none;
-}
-
-/*
-   checkbox
-
-   input:checked ~ .article_content, input:checked ~ .sub_category{
-   transform-origin: top;
-   transition: transform 0.4s ease-out;
-   transform: scaleY(1); 
-   max-height: 100%;
-}
-*/
-
-/*
-   opens projects but only if portfolio
-   is checked
-
-.sub_category>.article_content:target{
-   transform-origin: top;
-   transition: transform 0.4s ease-out;
-   transform: scaleY(1); 
-   max-height: 100%;
-}
-*/
-
-/*
-   have to comment this out because
-   it messes with the layout for some
-   reason
-
-input ~ .article_content, input ~ .sub_category{
-   overflow: hidden;
-   transform-origin: top;
-   transition: transform 0.4s ease-out;
-   transform: scaleY(0); 
-   max-height: 0;
-}
-*/
 
