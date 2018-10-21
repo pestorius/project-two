@@ -94,7 +94,7 @@ figcaption{
 
 #header_name{
    margin: 0 auto;
-   margin-top: 1.5em;
+   padding-top: 1.5em;
    font-size: 4em;
    margin-bottom: 0.8em;
 }
