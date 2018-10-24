@@ -12,7 +12,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
    element selectors
 */
 
+/*
+   picking a bg color
+   pastel blue: #c5d1e5
+   lighter pastel blue: #dee3ea;
+   light creamy gold-ish: #f4c97c;
+   lighter desaturated khaki: #ede3bd;
+   light grey: #cec3b5;
+*/
 html{
+   background: #cec3b5;
    scroll-behavior: smooth;
    font-family: Trebuchet MS, Helvetica, Verdana, sans-serif;
 }
@@ -110,9 +119,14 @@ footer img{
 }
 
 #header_name{
+   font-family: 'Chakra Petch', Trebuchet MS, sans-serif;
+   /*or
+   font-family: 'Montserrat';
+   */
+   font-weight: bold;
+   font-size: 4em;
    margin: 0 auto;
    padding-top: 1.5em;
-   font-size: 4em;
    padding-bottom: 0.8em;
 }
 
