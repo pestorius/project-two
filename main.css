@@ -22,8 +22,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 html {
   background: #cec3b5;
-  scroll-behavior: smooth;
   font-family: "Trebuchet MS", Helvetica, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -44,9 +44,9 @@ h3 {
 }
 
 p {
+  font-size: 0.9em;
   line-height: 1.3em;
   margin-bottom: 1em;
-  font-size: 0.9em;
 }
 
 @media screen and (min-width: 600px) {
@@ -56,26 +56,26 @@ p {
 }
 
 ul {
+  line-height: 1.2em;
   list-style-type: circle;
   padding-left: 1.5em;
-  line-height: 1.2em;
 }
 
 article {
-  text-align: left;
   margin: 0 15%;
+  text-align: left;
 }
 
 nav ul {
   background: #b7b1a8;
-  border-width: 0;
   border-radius: 10px;
+  border-width: 0;
   display: flex;
-  margin: 0 15%;
-  list-style-type: none;
-  padding: 0;
   flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 15%;
   margin-bottom: 3em;
+  padding: 0;
   text-align: center;
 }
 
@@ -136,22 +136,22 @@ footer img {
   /*or
   font-family: 'Montserrat';
   */
-  font-weight: bold;
   font-size: 4em;
+  font-weight: bold;
   margin: 0 auto;
-  padding-top: 1.5em;
   padding-bottom: 0.8em;
+  padding-top: 1.5em;
 }
 
 #contact-me, #logo {
+  max-width: 4em;
   width: 10vw;
   z-index: 1;
-  max-width: 4em;
 }
 
 #logo {
-  position: fixed;
   left: 0.3em;
+  position: fixed;
   right: 0.3em;
   top: 0.3em;
 }
@@ -171,16 +171,16 @@ footer img {
 
 #dropdown-content img {
   display: block;
-  width: 10vw;
-  max-width: 4em;
   margin-top: 0.5em;
+  max-width: 4em;
+  width: 10vw;
 }
 
 #fixed-social:hover #dropdown-content {
+  max-height: 100%;
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 0.4s ease-in;
-  transform: scaleY(1);
-  max-height: 100%;
 }
 
 #photography-fig img {
@@ -190,8 +190,8 @@ footer img {
 @media screen and (min-width: 600px) {
   #photography-container {
     display: grid;
+	grid-column-gap: 2%;
     grid-template-columns: 49% 49%;
-    grid-column-gap: 2%;
   }
   #photography-heading {
     text-align: center;
@@ -212,10 +212,10 @@ footer img {
 */
 
 .main-dot {
-  width: 0.4em;
   display: block;
   margin: 1em auto;
   opacity: 0.7;
+  width: 0.4em;
 }
 
 .resume-ul {
@@ -237,9 +237,9 @@ footer img {
 }
 
 .row-of-pics figcaption {
-  text-align: left;
-  margin-bottom: 1em;
   line-height: 1.3em;
+  margin-bottom: 1em;
+  text-align: left;
 }
 
 
